@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://uncle-yuanl.top/google46eedd316754c240.html</loc>
+    
+    <lastmod>2022-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://uncle-yuanl.top/baidu_verify_code-oWFPuZxZN8.html</loc>
+    
+    <lastmod>2022-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://uncle-yuanl.top/tags/index.html</loc>
     
     <lastmod>2022-10-24</lastmod>
     
@@ -11,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://uncle-yuanl.top/categories/index.html</loc>
     
     <lastmod>2022-10-24</lastmod>
     
@@ -20,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/10/10/My-Test-Blog/</loc>
+    <loc>http://uncle-yuanl.top/2022/10/10/My-Test-Blog/</loc>
     
     <lastmod>2022-10-10</lastmod>
     
@@ -29,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/10/06/hello-world/</loc>
+    <loc>http://uncle-yuanl.top/2022/10/06/hello-world/</loc>
     
     <lastmod>2022-10-06</lastmod>
     
@@ -39,7 +57,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>http://uncle-yuanl.top/</loc>
     <lastmod>2022-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
