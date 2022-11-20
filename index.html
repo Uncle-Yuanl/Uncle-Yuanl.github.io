@@ -227,7 +227,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-11-20 22:40:23 / 修改时间：23:27:10" itemprop="dateCreated datePublished" datetime="2022-11-20T22:40:23+08:00">2022-11-20</time>
+              <time title="创建时间：2022-11-20 22:40:23 / 修改时间：23:41:32" itemprop="dateCreated datePublished" datetime="2022-11-20T22:40:23+08:00">2022-11-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -294,7 +294,7 @@
 <h1 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h1><h2 id="新词发现"><a href="#新词发现" class="headerlink" title="新词发现"></a>新词发现</h2><p>使用新词发现技术的人，最绕不开的就是这篇博客<a target="_blank" rel="noopener" href="http://www.matrix67.com/blog/archives/5044">《互联网时代的社会语言学：基于SNS的文本数据挖掘》</a>。在这篇博客中，原博作者从统计学角度去描述一个词：词内部的字符搭配较为固定，而词的头和尾与外部的字符搭配较为多样。具体的例子就是，在快消领域中当我们看到“烟酰”时，我们的第一反应会是“烟酰胺”，除此以外我们很少能想到其他的组合。而看到“烟酰胺”时，我们却很难判断前后是什么词，可能是“含烟酰胺”，“涂烟酰胺”，“用烟酰胺”等等很多不同的组合。而这种“很少”与“很多”就可以通过语料统计出来，这两种特征原博作者分别称之为“凝固度”和“自由度”</p>
 <ul>
 <li>凝固度<br>$$<br>min(\frac{p(abc)}{p(a)p(bc)},\frac{p(abc)}{p(ab)p(c)})<br>$$<br>n-gram就对比n-1种切分方式。当词的长度超过2时，就有不同的切分，同时考虑多种切分是为了避免，错误的切分方式高估了词的凝固度。如“的电影”，其中p(的)是非常大的</li>
-<li>自由度<br>$$<br>min(EL, ER)\<br>$$<br>其中：<br>$$<br>EL &#x3D; Entropy_{left}(string) &#x3D; \sum_{w_{i}\in{W_{m}}}p(w_{i}|string)log_{e}p(w_{i}|string)\<br>ER &#x3D; Entropy_{left}(string) &#x3D; \sum_{w_{i}\in{W_{n}}}p(w_{i}|string)log_{e}p(w_{i}|string)\<br>$$<br>即词与外界的搭配，可以看到词有左边界与右边界，因此存在左邻字集合与右邻字集合。我们使用信息熵来衡量一个文本片段与外部的搭配有多么随机</li>
+<li>自由度改<br>$$<br>min(EL, ER)\<br>$$<br>其中：<br>$$<br>EL &#x3D; Entropy_{left}(string) &#x3D; \sum_{w_{i}\in{W_{m}}}p(w_{i}|string)log_{e}p(w_{i}|string)\<br>ER &#x3D; Entropy_{left}(string) &#x3D; \sum_{w_{i}\in{W_{n}}}p(w_{i}|string)log_{e}p(w_{i}|string)\<br>$$<br>即词与外界的搭配，可以看到词有左边界与右边界，因此存在左邻字集合与右邻字集合。我们使用信息熵来衡量一个文本片段与外部的搭配有多么随机</li>
 </ul>
 <h2 id="回溯"><a href="#回溯" class="headerlink" title="回溯"></a>回溯</h2><p>苏神在其博客中<a target="_blank" rel="noopener" href="https://kexue.fm/archives/4256">中文分词系列</a>，提出：<strong>分词就是在相关性较弱的字符处，将文本截断</strong>，因而从切词的角度实现新词发现。只是之前的方法都只考虑了相邻2grams的相关性，而升级后的算法同时考虑了多字内部的凝固度（词在任一位置的相关性都是较强的）。从公式上来看依旧是：$min(\frac{p(abc)}{p(a)p(bc)},\frac{p(abc)}{p(ab)p(c)})$，但实现方式如下：  </p>
 <ol>
