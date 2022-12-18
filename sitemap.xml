@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://uncle-yuanl.top/2022/12/18/%E4%BA%A4%E6%98%93%E8%B4%B9%E7%94%A8/</loc>
+    
+    <lastmod>2022-12-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://uncle-yuanl.top/2022/11/20/%E6%96%B0%E8%AF%8D%E5%8F%91%E7%8E%B0%E6%95%B4%E7%90%86/</loc>
     
     <lastmod>2022-11-20</lastmod>
@@ -58,7 +67,7 @@
 
   <url>
     <loc>http://uncle-yuanl.top/</loc>
-    <lastmod>2022-11-20</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,14 +75,14 @@
   
   <url>
     <loc>http://uncle-yuanl.top/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2022-11-20</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://uncle-yuanl.top/tags/NLP/</loc>
-    <lastmod>2022-11-20</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -82,14 +91,14 @@
   
   <url>
     <loc>http://uncle-yuanl.top/categories/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2022-11-20</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://uncle-yuanl.top/categories/NLP/</loc>
-    <lastmod>2022-11-20</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
