@@ -90,13 +90,6 @@
 
   
   <url>
-    <loc>http://uncle-yuanl.top/categories/%E6%8A%95%E8%B5%84/</loc>
-    <lastmod>2022-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://uncle-yuanl.top/categories/NLP/</loc>
     <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -105,6 +98,13 @@
   
   <url>
     <loc>http://uncle-yuanl.top/categories/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2022-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://uncle-yuanl.top/categories/%E6%8A%95%E8%B5%84/</loc>
     <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
